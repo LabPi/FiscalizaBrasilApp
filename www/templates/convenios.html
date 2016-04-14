@@ -1,0 +1,47 @@
+<ion-view view-title="Convênios">
+<ion-content>
+<div class="list">
+  <div class="item">
+    <h2>Convênio 40026</h2>
+    <p>Órgão concendente: Ministério da Cultura</p>
+    <p>Modalidade: Convênio</p>
+    <p>Data de fim de vigência: 20/04/2010</p>
+    <p>Global: R$ 37.500,00</p>
+    <p>Repasse da União: R$ 30.000,00</p>
+    <p>Valor da contrapartida: R$ 7.500,00</p>
+    <p>Situação: PROPOSTA APROVADA E PLANO DE TRABALHO EM COMPLEMENTAÇÃO</p>
+    <p>Justificativa (resumida): <h5>Em homenagem ao Arquiteto Oscar Niemeyer a Direção Nacional do Instituto de Arquitetos do Brasil (DN IAB) editará um livro com</h5></p>
+    <p>Objetivo (resumido): <h5>O livro O.N. 100 IN - Depoimentos- A ARQUITETURA DE OSCAR NIEMEYER consistirá na publicação de uma coletânea de textos analíticos ...</h5></p>
+    <p>
+      <button ng-click="openModal()" class="button button-full button-assertive button-small">
+        Criar alerta
+      </button>
+    </p>
+  </div>
+</div>
+</ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+<ion-modal-view>
+<ion-header-bar>
+<h1 class="title">Alerta</h1>
+</ion-header-bar>
+<ion-content>
+<h5>Informe em 250 caracteres o motivo do alerta</h5>
+
+<label class="item item-input item-stacked-label">
+<span class="input-label"></span>
+<textarea placeholder="" rows="8" cols="10">
+</textarea>
+</label>
+<button ng-click="enviar()" class="button button-block button-balanced">
+Enviar
+</button>
+<button ng-click="closeModal()" class="button button-block button-stable">
+Cancelar
+</button>
+
+</ion-content>
+</ion-modal-view>
+</script>

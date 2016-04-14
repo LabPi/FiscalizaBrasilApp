@@ -1,0 +1,33 @@
+<ion-view view-title="Proponentes">
+<ion-content>
+<div class="list">
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Estado
+    </div>
+    <select ng-options="uf.nome for uf in model.ufs" 
+    ng-model="model.ufSelecionada" ng-change="obterMunicipios()">
+    <option value="">--Selecione--</option>
+  </select>
+</label>
+<label class="item item-input item-select">
+  <div class="input-label">
+    Município
+  </div>
+  <select ng-options="municipio.nome for municipio in model.municipios" 
+  ng-model="model.municipioSelecionado">
+</select>
+</label>
+<label class="item item-input item-stacked-label">
+  <span class="input-label">Nome</span>
+  <input type="text" ng-model="model.nome" placeholder="Informe o nome do proponente">
+</label>
+<button ng-click="pesquisar()" class="button button-full button-positive icon ion-ios-search">
+  Pesquisar
+</button>
+<button ng-click="pesquisar()" class="button button-full button-royal icon ion-ios-location">
+  Usar minha localização
+</button>
+</div>
+</ion-content>
+</ion-view>
